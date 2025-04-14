@@ -1,7 +1,24 @@
 {
+  "name": "stock-checker",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc",
+    "test-server": "node --loader ts-node/esm src/test-server.ts"
+  },
   "dependencies": {
+    "@types/express": "^5.0.1",
+    "cheerio": "^1.0.0",
+    "express": "^5.1.0",
     "node-fetch": "^3.3.2",
     "node-notifier": "^10.0.1",
-    "node-schedule": "^2.1.1"
+    "stock-checker": "file:"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/node-notifier": "^8.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
