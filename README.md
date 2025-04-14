@@ -23,10 +23,11 @@ A simple Node.js script to monitor the stock status of a product on a webpage.
 
 1. **Run the Script**:
    ```bash
-   node check.js
+   npm start
    ```
 
 2. **Enter Product URL**:
+   -Dismiss the test windows notification
    - When prompted, enter the URL of the product page you want to monitor.
 
 3. **Monitor Stock**:
